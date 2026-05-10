@@ -38,11 +38,29 @@
 
     .greeting {
       font-size: 2rem;
-      font-weight: 700;
-      color: #fff;
       font-weight: 300;
+      color: #fff;
       text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
       letter-spacing: 1px;
+    }
+
+    .btn-snake {
+      margin-top: 8px;
+      padding: 14px 36px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+      border: 2px solid rgba(255, 255, 255, 0.6);
+      border-radius: 50px;
+      text-decoration: none;
+      backdrop-filter: blur(6px);
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-snake:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
     }
   </style>
 </head>
@@ -54,6 +72,7 @@
       alt="Mark's avatar"
     />
     <p class="greeting">Hi! I'm Mark!</p>
+    <a class="btn-snake" href="snake.html">🐍 Play Snake</a>
   </div>
 </body>
 </html>
