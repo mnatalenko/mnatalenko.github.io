@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mark's Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to bottom, #1a1a2e 0%, #4a1942 25%, #c0392b 55%, #e67e22 78%, #f9ca24 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+      object-fit: cover;
+    }
+
+    .greeting {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      font-weight: 300;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img
+      class="avatar"
+      src="https://www.gravatar.com/avatar/d9090a2c3b898b8bc77636e77d54e889?s=320&d=identicon"
+      alt="Mark's avatar"
+    />
+    <p class="greeting">Hi! I'm Mark!</p>
+  </div>
+</body>
+</html>
